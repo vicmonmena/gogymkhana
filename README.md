@@ -48,3 +48,16 @@ Add the following configuration to launch.json file:
   ]
 }
 ```
+
+## About heroku
+
+Find heroku apps [here](https://dashboard.heroku.com/apps/)
+
+### Upload changes and publish
+git push heroku-gymkhana main
+
+### Renaming apps
+heroku apps:rename azgymkhana 
+
+### Renaming remote
+ git remote rename gogymkhana heroku-gymkhana
