@@ -14,7 +14,7 @@ go run .
 ```
 
 ### Note
-`go run` compila y arranca el proyecto
+`go run` build and run this project
 
 ## Build project
 
