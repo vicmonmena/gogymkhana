@@ -23,7 +23,6 @@ func route(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("URL Path: ", r.URL)
 	if strings.Contains(strings.ToLower(r.URL.Path), "baunatal") == true {
 		// Muchos de nosotros somos más capaces que algunos de nosotros
-		//   5 		2 	  4				3 	 1 		 6 		10 		 8 		9 		7
 		messyText := MessyText{
 			IndexedWord{"más", 1},
 			IndexedWord{"de", 2},
@@ -39,7 +38,6 @@ func route(w http.ResponseWriter, r *http.Request) {
 		json.NewEncoder(w).Encode(messyText)
 	} else if strings.Contains(strings.ToLower(r.URL.Path), "sevilla") == true {
 		// Pero ninguno de nosotros somos tan capaces como todos nosotros
-		//  5			 6    2     4       1    10    7      3    9       8
 		messyText := MessyText{
 			IndexedWord{"somos", 1},
 			IndexedWord{"de", 2},
@@ -61,3 +59,4 @@ func main() {
 	http.HandleFunc("/baunatal", route)
 	http.HandleFunc("/sevilla", route)
 	log.Fatal(http.ListenAndServe(":8080", nil))
+}
