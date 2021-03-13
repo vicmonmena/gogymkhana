@@ -54,10 +54,18 @@ Add the following configuration to launch.json file:
 Find heroku apps [here](https://dashboard.heroku.com/apps/)
 
 ### Upload changes and publish
+```
 git push heroku-gymkhana main
-
+```
+### Heroku logs
+```
+heroku logs --tail
+```
 ### Renaming apps
+```
 heroku apps:rename azgymkhana 
-
+```
 ### Renaming remote
+```
  git remote rename gogymkhana heroku-gymkhana
+ ```
